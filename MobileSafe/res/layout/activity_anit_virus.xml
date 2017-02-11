@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        style="@style/TitleStyle"
+        android:text="手机杀毒"
+        />
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    <RelativeLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        >
+	        <ImageView 
+	            android:background="@drawable/ic_scanner_malware"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            />
+	        <ImageView 
+	            android:id="@+id/iv_scanning"
+	            android:background="@drawable/act_scanning_03"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            />
+	    </RelativeLayout>
+	    <LinearLayout 
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        >
+	        <TextView 
+	            android:id="@+id/tv_name"
+	            android:text="正在扫描的应用"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            />
+	        <!-- 自定义进度条图片 -->
+	        <ProgressBar 
+	            android:id="@+id/pb_bar"
+	            android:progressDrawable="@drawable/progress_bg"
+	            style="@android:style/Widget.ProgressBar.Horizontal"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            />
+	        
+	    </LinearLayout>
+	</LinearLayout>
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    <LinearLayout 
+	        android:orientation="vertical"
+	        android:id="@+id/ll_add_text"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        ></LinearLayout>
+	    
+	</ScrollView>
+</LinearLayout>

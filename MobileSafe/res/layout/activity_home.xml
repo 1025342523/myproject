@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="功能列表" />
+    <!-- android:ellipsize="marquee"  跑马灯 -->
+    <!-- android:marqueeRepeatLimit="marquee_forever" 一直滚动属性 -->
+    <!-- 有跑马灯效果，必须让其获取焦点 -->
+
+   <!--  <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="啊 五环 你比四环多一环  啊   五环 你比六环少一环  终于有一天  你会绣到七环 绣到七环怎么办  你比五环多两环"
+        android:textColor="#000" /> -->
+
+    
+    <com.itheima.mobilesafe.view.FocusTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="啊 五环 你比四环多一环  啊   五环 你比六环少一环  终于有一天  你会绣到七环 绣到七环怎么办  你比五环多两环"
+        android:textColor="#000" >
+    </com.itheima.mobilesafe.view.FocusTextView>
+     <!--  android:numColumns="3"   九宫格  的列数 的属性-->
+     <!-- android:verticalSpacing="10dp" 指定内部条目竖直方向间距为10dp-->
+    <GridView
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+        android:layout_marginTop="5dp"
+         >
+    </GridView>
+
+</LinearLayout>
